@@ -1,0 +1,39 @@
+* Set up node, express, ejs
+** npm init
+** npm install express ejs --save
+* D3 Principles
+** selections
+#+begin_src javascript
+d3.select("body") //selects the <body> html element
+#+end_src
+** append operators
+#+begin_src javascript
+d3.select("body")
+.append("svg")
+.append("rect")
+#+end_src
+** style operators
+#+begin_src javascript
+d3.select("body")
+    .append("svg")
+    .attr("height", 50)
+    .attr("width", 50)
+    .append("circle")
+    .attr("cx", 25)
+    .attr("cy", 25)
+    .attr("r", 10)
+    .style("fill", "steelblue")
+#+end_src
+
+    monthlySales = [
+        {"month":10, "sales": 120},
+        {"month":20, "sales": 114},
+        {"month":30, "sales": 125},
+        {"month":40, "sales": 130},
+        {"month":50, "sales": 123},
+        {"month":60, "sales": 128},
+        {"month":70, "sales": 140},
+        {"month":80, "sales": 118},
+        {"month":90, "sales": 129},
+        {"month":100, "sales": 138},
+        ];
